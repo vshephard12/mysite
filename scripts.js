@@ -30,4 +30,6 @@ function saveNotes() {
 }
 $('#saveNotesButton').click(saveNotes)
 
+checkDay()
+
 
