@@ -45,7 +45,7 @@
     $("#saveNotesButton").click(function(){
         var currentNotes = $("#notepad").val();
         localStorage.setItem("notes", currentNotes);
-        $("#notepad").print(currentNotes);
+        $("#notepad").val(currentNotes);
     });
 </script>
 </html>
