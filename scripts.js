@@ -24,6 +24,10 @@ function checkDay() {
     $('#date').html(year + '-' + month + '-' + day)
 }
 
+function saveNotes() {
+    var currentNotes = $("#notes").val();
+    localStorage.setItem("notes", currentNotes);
+}
 
 checkDay()
 

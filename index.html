@@ -42,10 +42,7 @@
         var loadNotes = "Enter your notes here and click Save";
     }
     $("notes").val(loadNotes);
-    $("#saveNotesButton").click(function(){
-        var currentNotes = $("#notes").val();
-        localStorage.setItem("notes", currentNotes);
-    });
+    $("#saveNotesButton").click(saveNotes());
 </script>
 </html>
 
