@@ -18,10 +18,10 @@
         <div class="main">
            <div class="widget">
                 <h3>Widget 01</h3>
-                <textarea id = "notepad" name = "message" rows=20 cols="40">
+                <textarea id = "note-area" name = "message" rows=20 cols="40">
                 </textarea>
                 <p>
-                <button id = "saveNotesButton">Save</button>
+                <button id = "saveNotesBtn">Save</button>
                 </p>
            </div>
            <div class="widget">
@@ -41,11 +41,10 @@
     catch(err) {
         var loadNotes = "Enter your notes here and click Save";
     }
-    $("notes").val(loadNotes);
-    $("#saveNotesButton").click(function(){
-        var currentNotes = $("#notepad").val();
+    $("note-pad").val(loadNotes);
+    $("#saveNotesBtn").click(function(){
+        var currentNotes = $("#note-pad").val();
         localStorage.setItem("notes", currentNotes);
-        print(localStorage);
     });
 </script>
 </html>
