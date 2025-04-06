@@ -41,9 +41,9 @@
     catch(err) {
         var loadNotes = "Enter your notes here and click Save";
     }
-    $("#note-pad").val(loadNotes);
+    $("#note-area").val(loadNotes);
     $("#saveNotesBtn").click(function(){
-        var currentNotes = $("#note-pad").val();
+        var currentNotes = $("#note-area").val();
         localStorage.setItem("notes", currentNotes); 
     });
 </script>
